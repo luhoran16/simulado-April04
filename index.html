@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Little Pony</title>
+    <style>
+      /* Estilos para o header */
+      header {
+        background-color: #D8B6F4;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+      }
+      header img {
+        height: 80px;
+      }
+      .logosite{
+        color: rgb(38, 3, 40);
+
+      }
+      /* Estilos para o carrossel */
+      .carousel {
+        width: 100%;
+        overflow: hidden;
+        }
+        .carousel img {
+            float: left;
+            width: 33.33%;
+            transition: transform 0.2s ease;
+        }
+        .carousel img:first-child {
+            margin-left: 0%;
+        }
+        .carousel img:last-child {
+            margin-right: 0%;
+        }
+        .carousel:hover img {
+             transform: translateX(-33.33%);
+            }
+
+      
+      /* Estilos para o botão centralizado */
+      .btn-center {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #F1C0EA;
+        color: ##5B1752;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      
+      /* Estilos para as divs lado a lado */
+
+      .container {
+        width: 100%;
+        text-align: center; 
+        align-items: center;
+    }
+    .box1, .box2 {
+        display: inline-block;
+        width: 45%;
+        height: 100px;
+        border: 0px solid black; 
+    }
+      
+      /* Estilos para o footer */
+      footer {
+        background-color: #D8B6F4;
+        height: 50px;
+        text-align: center;
+        color: rgb(48, 3, 60);
+        padding: 10px;
+        margin: 0 auto;
+      }
+      .root1{
+        align: left;
+        color: #3A0D5F;
+        font-size: 16px;
+      }
+      .root2{
+        align: center;
+        color: #3A0D5F;
+        font-size: 16px;
+      }
+      .root3{
+        align: right;
+        color: #3A0D5F;
+        font-size: 16px;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <!-- Header com logo  -->
+    
+    <header>
+      <img src="https://freepngimg.com/thumb/my_little_pony/23931-1-my-little-pony-transparent-background.png" alt="My Little Pony">
+      <nav class="logosite">
+       <h2>My Little Pony Fan Club</h2> 
+      </nav>
+    </header>
+    
+    <!-- Carrossel -->
+
+        <div class="carousel">
+            <img src="https://static.wikia.nocookie.net/mlp/images/5/5a/Twilight%2C_Pinkie_and_Fluttershy_dancing_S1E25.png/revision/latest/scale-to-width-down/1000?cb=20110915161942" alt="Primeiro Slide">
+            <img src="https://static.wikia.nocookie.net/mlp/images/2/2f/Twilight_looks_cool_S2E8.png/revision/latest/scale-to-width-down/1000?cb=20120911182607" alt="Segundo Slide">
+            <img src="https://static.wikia.nocookie.net/mlp/images/6/60/Twilight_Sparkle_as_Masked_Matter-Horn_S4E06.png/revision/latest/scale-to-width-down/1000?cb=20131223100902" alt="Terceiro Slide">
+            <img src="https://static.wikia.nocookie.net/mlp/images/a/aa/Twilight_Apple_Bloom_spell_S1E12.png/revision/latest/scale-to-width-down/1000?cb=20111130122731" alt="Quarto Slide">
+            <img src="https://static.wikia.nocookie.net/mlp/images/f/fd/Rarity%2C_Applejack_and_Twilight_angry_look_S01E10.png/revision/latest/scale-to-width-down/1000?cb=20111204171829" alt="Quinto Slide">
+            <img src="https://static.wikia.nocookie.net/mlp/images/2/29/Applejack_and_Rarity_still_arguing_S4E22.png/revision/latest/scale-to-width-down/1000?cb=20140421211808" alt="Sexto slide">
+        </div>
+
+    <!-- Botão centralizado -->
+    <button class="btn-center">Temporadas</button>
+    <!-- Duas divs lado a lado -->
+
+    <div class="container">
+        <div class="box1">
+            Melhor site para assistir desenho!
+        </div>
+        <div class="box2">
+            <iframe class="youtubevid" width="560" height="315" src="https://www.youtube.com/watch?v=SWAA5Qt6YVw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+
+
+   
+    <!-- Footer -->
+    <footer>
+        <span class="root1" >About Us</span>  • 
+        <span class="root2">Contact Info</span>  • 
+         <span class="root3">Authorized Dealers</span>
+        </div>
+    </footer>
+  </body>
+</html>
